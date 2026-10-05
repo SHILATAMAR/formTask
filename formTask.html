@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Conference Registration </h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" minlength="2" required>
+            </br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
+            </br>
+            <label for="phon">Phon</label>
+            <input type="tel" name="phon" id="phon" placeholder="enter your phon" pattern="[0-9]{9,12}">
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend>Ticket & Workshops</legend>
+            <label for="Ticket">Ticket type</label>
+            <select id="Ticket" name="Ticket" required>
+                <option value="">--Select Ticket--</option>
+                <option value="stud">Student</option>
+                <option value="vip">VIP</option>
+                <option value="Sta">Standard</option>
+                <p><strong>Workshops:</strong><br>
+                <input type="checkbox" name="Workshops" id="WebPerformance" value="WebPerformance">
+                <label for="WebPerformance">Web Performance</label>
+                <input type="checkbox" name="Workshops" id="Accessibility" value="Accessibility">
+                <label for="Accessibility">Accessibility</label>
+                <input type="checkbox" name="Workshops" id="Testing" value="Testing">
+                <label for="Testing">Testing</label>
+            </p>
+                </br>
+                <p><strong> Diet: </strong></p>
+                <input type="radio" name="Diet" id="none" value="none">
+                <label for="none">none</label>
+                <input type="radio" name="Diet" id="vegan" value="vegan">
+                <label for="vegan">vegan</label>
+                <input type="radio" name="Diet" id="kosher" value="kosher">
+                <label for="kosher">kosher</label>
+                <input type="radio" name="Diet" id="halal" value="halal">
+                <label for="halal">halal</label>
+                <input type="radio" name="Diet" id="other" value="other">
+                <label for="other">other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label for="CardNumber">Card number</label>
+            <input type="text" name="CardNumber" id="CardNumber" minlength="13" maxlength="19" required>
+            </br>
+            <label for="cardExpiry">Expiry date</label>
+            <input type="month" id="cardExpiry" name="cardExpiry" required min="2026-10" autocomplete="cc-exp">
+            </br>
+            <label for="cvv">CVV</label>
+            <input type="password" name="cvv" id="cvv" maxlength="3" required>
+        </fieldset>
+        <fieldset>
+            <legend>Agreements & Validation</legend>
+            </br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms and Conditions</label>
+            </br>
+        </fieldset>
+        <button type="submit">Register Now</button>
+    </form>
+</body>
+
+</html>
